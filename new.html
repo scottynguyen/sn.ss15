@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>    
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -35,7 +35,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="todohtml">Create a Todo</a></li>
-        <li><a href="#">Tutorial</a></li>
+        <li><a href="edit.html">Edit</a></li>
         <li><a href="#">Impressum</a></li>
       </ul>
         </li>
@@ -43,8 +43,43 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<table class="table table-striped">
 
-<h1>Start</h1>
+    <thead>
+    <tr>
+      <th>What</th>
+      <th>Deadline</th>
+      <th>Done</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>homework</td>
+      <td>28.4.15</td>
+      <td>50%<a class="btn btn-default" href="edit.html" role="button">Edit</a><a class="btn btn-default" href="#" role="button">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td>work out</td>
+      <td>12.5.15</td>
+      <td>10%<a class="btn btn-default" href="edit.html" role="button">Edit</a><a class="btn btn-default" href="#" role="button">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td>Project</td>
+      <td>26.5.15</td>
+      <td>66%<a class="btn btn-default" href="edit.html" role="button">Edit</a><a class="btn btn-default" href="#" role="button">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td>Bachelor Thesis</td>
+      <td>28.6.15</td>
+      <td>4%<a class="btn btn-default" href="edit.html" role="button">Edit</a><a class="btn btn-default" href="#" role="button">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Current Todo's</h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
