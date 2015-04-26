@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>TODOwebsite</title>
+    <title>Edit</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,34 +17,58 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>    
+  <body>
+  	
     <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="new.html">Home</a>
-    </div>
+		<div class="container-fluid">
+   			<div class="navbar-header">
+   			<a class="navbar-brand" href="#">Home</a>
+   			</div>
+ 			<div>
+       			<ul class="nav navbar-nav">
+				<li><a href="todo.html">Create a Todo</a></li>
+          			<li class="active"><a href="edit.html">Edit</a></li>
+          			<li><a href="impressum.html">Impressum</a></li>
+       			</ul>
+      			</div>
+    		</div>
+  	</nav>
+  	
+    <div class="container">
+  <h2> Edit a ToDo</h2>
+  	<div class="form-group">
+  		<label for="choose">Choose a TODO:</label>
+  		 <p><div class="dropdown">
+  			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">TODO list
+  			<span class="caret"></span></button>
+  			<ul class="dropdown-menu">
+    					<li><a href="#">homework</a></li>
+    					<li><a href="#">workout</a></li>
+    					<li><a href="#">Project</a></li>
+    					<li><a href="#">Bachelor Thesis</a></li>
+  		</ul>
+		</div>
+		</p>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="todohtml">Create a Todo</a></li>
-        <li class="active"><a href="#">Edit <span class="sr-only">(current)</span></a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-      </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+		<div class="form-group">
+    			<label for="desc">Description:</label>
+      			<textarea class="form-control" rows="3" placeholder="Enter a description"></textarea>
+    		</div>
+    
+    		<div class="form-group">
+      			<label for="deadl">Deadline:</label>
+      			<input type="text" class="form-control" id="deadl" placeholder="Enter the deadline date">
+    		</div>
+    
+    		<div class="form-group">
+      			<label for="progss">Progress:</label>
+      			<input type="text" class="form-control" id="progss" placeholder="Enter the progress percentage">
+		</div>
+    
+    		<button type="submit" class="btn btn-default">Save</button>
+	</div>
+  </div>
 
-<h1>ZZZ...Edit later</h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
